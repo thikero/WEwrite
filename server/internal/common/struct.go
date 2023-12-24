@@ -13,11 +13,11 @@ const FAIL = -1
 const EXCEPT = 1
 
 type Change struct {
-	line int
-	text string
+	Line int    `json:"Line"`
+	Text string `json:"Text"`
 }
 type Change_Req struct {
-	session_id  string
-	change_type int
-	changes     []Change
+	Session_id  string `json:"Session_id"`
+	Change_type int    `json:"Change_type"`
+	Changes     []Change
 }
